@@ -124,9 +124,9 @@ let equal = document.querySelector('.equal');
 equal.addEventListener('click',()=>{
     let d = hi + num;
     d = eval(d);
+    num = d;
     d = addCommas(d);
     hi = '';
-    num = '';
     his.innerHTML = hi;
     res.innerHTML = d;
 });
